@@ -1,0 +1,864 @@
+@import 'table';
+@import 'grid';
+@import 'forms';
+@import 'tab';
+@import 'buttonstyle';
+$white:white;
+$blue:#18afd3;
+$orange:#f57e57;
+$back:#F1F3F9;
+$gray:#868686;
+body{
+    overflow-x:hidden;
+    font-family: 'Oswald', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+   .yes {
+        i {
+   position: fixed;
+  background-color: $white;
+  color:$blue;
+  padding: 13px 15px;
+  border-radius: 50%;
+  top: 50px;
+  left: 2%;
+  z-index: 1000;
+  &:hover {
+    transition: 0.5s;
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+  }
+        }
+    }
+.sidebar {
+    .activeee {
+        display: block;
+    }
+    #pagebar1,#pagebar2,#pagebar3 {
+        display: none;
+            span {
+                font-size: 16px;
+                 font-family: 'Lato', sans-serif;
+            }
+            li {
+                i { 
+                    margin-right: 10px;
+                    font-size: 10px;
+                    display: none;
+                }
+            }
+            li:hover i {
+                display: block;
+            }
+            li:hover span {
+                margin-left: 10px;
+                margin-bottom: 15px;
+                transition: all 0.5s;
+            }
+        
+    }
+    .mysearch {
+     margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+     font-size: 20px;
+    padding: 7%;
+    
+    }
+    .no {
+     float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 gray;
+        opacity: 1;
+        i {
+       background-color: $white;
+      color: $blue;
+      padding: 13px 15px;
+      border-radius: 50%;
+      margin-top: 40px;
+      margin-right: -25px;
+      opacity: 1;
+      z-index: 1000; 
+      position: fixed;
+      &:hover {
+          transition: 0.5s;
+        background-color: $blue;
+        color: $white;
+      }
+        }
+    }
+    z-index: 1000;
+    position: fixed;
+  background-color: $white;
+  width: 350px;
+  height: 100%;
+  left: -400px;
+  top: 0;
+  overflow-y: scroll;
+
+  ul {
+      li {
+     display: block;
+    margin: 20px;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: $orange;
+      font-size: 16px;
+      &:hover {
+          color: #ea430f;
+      }
+    }
+      }
+  }
+}
+#main1 {
+    background-image: url('../images/pages/main0.jpg');
+    background-position: center center;
+    background-blend-mode: overlay;
+    transition: all 0.5s;
+    background-size: cover;
+    opacity: 0.8;
+    h1::after {
+        display: none;
+    }
+}
+.margintop25{
+    margin-top: 25px;
+}
+.header {
+    z-index: 4;
+    .numbers {
+     margin-left: 67px;
+    margin-top: -39px;
+   a{
+  color: $white;
+  font-size: 16px;
+    }
+    }
+    i{  
+ line-height: 50px;
+color: $white;
+font-size: 25px;
+width: 50px;
+height: 50px;
+background-color: $blue;
+border-radius: 50%;
+text-align: center;
+    }
+}
+
+#about {
+
+           h4{
+            transform: rotate(-90deg);
+            color: $white;
+        
+        }
+    .opening {
+height: 240px;
+border-radius: 3%;
+position: relative;
+
+         .hours {
+        width:20%;
+        height: 100%;
+        background-color:$blue; 
+        border-bottom-left-radius: 4%;
+        border-top-left-radius: 4%;
+        float: left;
+        h4 {
+                margin-top: 59%;
+        }
+
+    }
+    .days {
+    width: 80%;
+    height: 100%;
+    background-color: $back;
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%;
+    float: left;
+    .center {
+        i {
+     color: $orange;
+    float: left;
+    position: absolute;
+    left: 43px;
+    top: -75px;
+    font-size: 35px;
+        }
+       position: absolute;
+       top:50%;
+        ul {
+            list-style-type: none;
+            float: left;
+           li {
+               font-size: 17px;
+           }
+        }
+    }
+    }
+    } 
+    .doctors {
+height: 240px;
+border-radius: 3%;
+position: relative; 
+.doc {
+        width:20%;
+        height: 100%;
+        background-color:$blue; 
+        border-bottom-left-radius: 4%;
+        border-top-left-radius: 4%;
+        float: left;
+       h4 {
+             margin-top: 59%;
+        }
+
+}
+.timetable {
+    width: 80%;
+    height: 100%;
+    background-color: $back;
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%;
+    float: left;
+            i {
+     color: $orange;
+    margin-left: 25px;
+    margin-top: 44px;
+    font-size: 35px;
+        }
+        p{
+            float: left;
+            margin-top: 32px;
+            margin-left: 20px;
+             font-family: 'Lato', sans-serif;
+
+        }
+}
+    }
+    .appointments {
+ margin-top: 35px;
+height: 240px;
+border-radius: 3%;
+position: relative; 
+        .left {
+        width:20%;
+        height: 100%;
+        background-color:$blue; 
+        border-bottom-left-radius: 4%;
+        border-top-left-radius: 4%; 
+        float: left; 
+         h4 {
+                margin-top: 59%;
+        }
+        }
+        .right {
+    width: 80%;
+    height: 100%;
+    background-color: $back;
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%;
+    float: left; 
+     p {
+          float: left;
+            margin-top: 32px;
+            margin-left: 20px;
+            font-family: 'Lato', sans-serif;
+            
+     }
+    i{
+     color: $orange;
+    margin-left: 25px;
+    margin-top: 44px;
+    font-size: 35px;
+    }
+        }
+    }
+    .emergency {
+ margin-top: 35px;
+height: 240px;
+border-radius: 3%;
+position: relative; 
+        .first {
+        width:20%;
+        height: 100%;
+        background-color:$blue; 
+        border-bottom-left-radius: 4%;
+        border-top-left-radius: 4%; 
+        float: left;
+        h4 {
+             margin-top: 59%;
+        }
+        }
+        .last {
+    width: 80%;
+    height: 100%;
+    background-color: $back;
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%; 
+    float: left;
+     i {
+     color: $orange;
+    margin-left: 25px;
+    margin-top: 44px;
+    font-size: 35px;
+     }
+     a {
+             color: #434445;
+             font-size: 27px;
+             position: absolute;
+             bottom: 99px;
+             &:hover {
+                 color: black;
+             }
+     }
+     span {
+         margin-left: 30px;
+         position: absolute;
+         bottom: 80px;
+          font-family: 'Lato', sans-serif;
+     }
+        }
+
+    }
+}
+#choose {
+
+    .orange {
+        width: 60px;
+        height: 60px;
+        background-color: $orange;
+        border-radius: 100%;
+        margin-top: 21px;
+
+    }
+    img {
+      padding-top: 10px;
+       
+    }
+    p {
+        color: $gray;
+        font-family: 'Lato', sans-serif;
+        font-size: 17px;
+    }
+}
+
+.backnone {
+    position: relative;
+    h2 {
+        font-size: 70px;
+    }
+     h2::after {
+  content: "";
+  width: 10%;
+  border-bottom: 4px solid $orange;
+  height: 4px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
+    background-color: white;
+}
+#clients {
+    h1 {
+        position: relative;
+        font-size: 70px;
+        
+    }
+    h1::after {
+  content: "";
+  width: 10%;
+  border-bottom: 4px solid $orange;
+  height: 4px;
+  position: absolute;
+  top: 170%;
+  left: 45%;
+    }
+    max-width: 100%;
+    background-color: $back;
+    margin-top: 200px;
+
+  .general{
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+  max-width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: $blue;
+      &:hover {
+      background-color: $orange;
+      padding-left: 20px;
+      transition: all 0.5s;
+      }
+      &:hover i {
+          opacity: 1;
+      }
+      &:hover a {
+          text-decoration-style: none!important;
+      }
+        }
+  a {
+    color: white;
+    font-size: 18px;
+    padding-right: 35px;
+    text-align: left;
+            }
+            i {
+                opacity: 0;
+                color: $white;
+                float: left;
+                padding-top: 15px;
+                font-size: 20px;
+            }
+    
+    h1 {
+        margin-top: 100px;
+        
+    }
+   p{
+       color: $gray;
+       margin-bottom: 100px;
+       font-size: 20px;
+       margin-top: 50px;
+       font-family: 'Open Sans', sans-serif;
+   }
+}
+   .view {
+       margin-top: 50px;
+       margin-bottom: 100px;
+       }
+   .mybtn {
+           background-color: $orange;
+           border-radius: 25px;
+           color: $white;
+           padding: 15px 25px;
+           &:hover {
+               background-color: $blue;
+               transition: all 0.5s;
+           }
+   }
+.bgimg {
+    background-image: url(../images/backgrounds/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 0;
+    position: relative;
+    .quality {
+       text-align: left;
+       position: absolute;
+       top: 20%;
+       left: 8%;
+       h1 {
+           color: $white;
+           font-size: 60px;
+           margin-top: 50px;
+       }
+       p {
+           color: $white;
+           font-family: 'Lato', sans-serif;
+           font-size: 20px;
+           margin-top: 30px;
+       }
+    }
+}
+
+ .test {
+     margin-top: 100px;
+     margin-left: 50px;
+     h1 {
+         font-size: 50px;
+         position: relative;
+     }
+ h1::after {
+    content: "";
+    width: 10%;
+    border-bottom: 4px solid #f57e57;
+    position: absolute;
+    top: 150%;
+    left: 14%;
+  }
+ }
+
+ #points {
+     position: absolute;
+         top: 110%;
+     left: 12%;
+     .point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $gray;
+    margin-right: 20px;
+    &:hover {
+        cursor: pointer;
+        background: $blue;
+    }
+     }
+     .active {
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     background-color:$blue;
+ }
+ }
+ #slider {
+     width: 500px;
+    //width:100%;
+     height: 300px;
+     overflow: hidden;
+    .slides {
+        display: block;
+        width: 2000px;
+        height: 300px;
+     margin-top: 100px;
+    margin-left: 15px;
+    transition: all 0.5s;
+        .slide {
+            float: left;
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+            p {
+                font-size: 20px;
+                color: $gray;
+                font-style: italic;
+                 font-family: 'Lato', sans-serif;
+            }
+            h3 {
+                margin-top: -41px;
+               margin-left: 80px;
+               color: $blue;
+            }
+            h6 {
+                color: $gray;
+               margin-top: -5px;
+               margin-left: 80px;
+               font-style: italic;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+            }
+        }
+    } 
+ }
+  .onlycolor {
+       background-color: $back;
+            h1 {
+         font-size: 50px;
+         position: relative;
+         left: 43%;
+     }
+ h1::after {
+  content: "";
+  width: 9%;
+  border-bottom: 4px solid $orange;
+  position: absolute;
+  top: 150%;
+  left: 1%;
+  }
+
+ }  
+.owl-stage {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}   
+.media-body {
+    width: 0;
+}
+.team {
+       p {   
+         margin-top: 15px;
+          text-align: left;
+          color: $gray;
+         font-size: 16px;
+         font-family: 'Lato', sans-serif;
+     }
+}
+     .tel {
+
+    position: absolute;
+    top: 37%;
+    left: 42%;
+    i {
+        font-size: 24px;
+        color: $blue;
+    }
+    a { 
+        color: #434445;
+        font-size: 21px;
+        &:hover {
+            color: $orange;
+        }
+    }
+     }
+  
+     .blue {
+         text-align: left;
+         color: $blue;
+         font-weight: 600;
+        font-family: 'Lato', sans-serif;
+     }
+     h4 {
+         color: $gray;
+         font-style: italic;
+         text-align: left;
+     
+     }
+
+     h1 {
+         margin-top: 100px;
+         margin-bottom: 80px;
+         position: relative;
+         font-size: 70px;
+     }
+//      h1:after {
+//   content: "";
+//   width: 10%;
+//   border-bottom: 4px solid $orange;
+//   position: absolute;
+//   top: 150%;
+//   left: 45%;
+//      }
+     #dots {
+     margin-top: 10%;
+    margin-bottom: 10%;
+     .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $gray;
+    margin-right: 20px;
+    &:hover {
+        cursor: pointer;
+        background: $blue;
+    }
+     }
+     .active {
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     background-color:$blue;
+ }
+ }
+ 
+ #dental {
+
+     h1 {
+         margin-top: 100px;
+         margin-bottom: 80px;
+         position: relative;
+         font-size: 70px;
+     }
+     h1:after {
+  content: "";
+  width: 10%;
+  border-bottom: 4px solid $orange;
+  position: absolute;
+  top: 150%;
+  left: 45%;
+     }
+     h3 {
+         float: left;
+         color: $blue;
+          font-family: 'Lato', sans-serif;
+          font-weight: 600;
+          margin-top: 30px;
+          margin-bottom: 30px;
+     }
+     h4 {
+         color: $gray;
+         font-family: 'Lato', sans-serif;
+         position: relative;
+        position: absolute;
+        bottom: -10%;
+     }
+     span {
+    position: absolute;
+    color: #f57e57;
+    font-family: 'Lato', sans-serif;
+    bottom: -8%;
+    right: 5%;
+    font-size: 18px;
+     }
+     p {
+         font-size: 18px;
+           font-family: 'Lato', sans-serif;
+           text-align: left;
+           margin-top: 20px;
+          line-height: 33px;
+
+     }
+     .btnsize {
+         font-family: 'Lato', sans-serif;
+         font-size: 18px;
+         color: $gray;
+         &:hover {
+             background-color: $blue;
+             color: $white;
+             transition: all 0.5s;
+         }
+     }
+ }
+#help {
+    background-image: url(../images/backgrounds/lastimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-blend-mode: overlay;
+     height: 800px;
+     .help1 {
+         margin-top: 5%;
+     }
+     h1 {
+         color: $white;
+     }
+     p {
+         color: $white;
+         font-size: 20px;
+         font-family: 'Lato', sans-serif;
+     }
+}
+.bgoverlay {
+        background: rgba(20, 100, 120, 0.4);
+        height: 100%;
+        width: 100%;
+        padding-bottom: 60px;
+}
+.info {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    i {
+        font-size: 42px;
+        color: $white;
+        width: 80px;
+        height: 80px;
+        background-color: $orange;
+        text-align: center;
+        border-radius: 50%;
+        padding-top: 20px;
+    }
+     a{
+     font-size: 25px;
+     color: black;
+     font-family: 'Lato', sans-serif;
+     font-weight: 700;
+     }
+}
+#footer {
+    background-color: $blue;
+    .footer1 {
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    p {
+        color: $white;
+        line-height: 27px;
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+  a {
+      color: $white;
+  }
+    }
+    ul {
+        li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    margin-right: 15px;
+    &:hover {
+        background-color: $orange;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &:hover i {
+        color: $white;
+    }
+            i {
+            font-size: 27px;
+            color: $gray;
+             padding: 10px;
+            }
+        }
+    }
+}
+#mydots{
+    margin-left: 9%;
+}
+
+     .dotone {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:$gray;
+    margin-right: 20px;
+    &:hover {
+        cursor: pointer;
+        background:  $orange;
+    }
+     }
+     .active1 {
+         background:  $orange;
+         width: 20px;
+         height: 20px;
+     }
+     .dentist {
+         h1 {
+             color: $white;
+         }
+         p {
+             color:$white;
+             font-size: 20px;
+             font-family: 'Lato', sans-serif;
+         }
+     }
+     .myform {
+         border: 1px solid gray;
+         margin-top: 22%;
+         padding: 30% 13%;
+         border-radius: 5%;
+         background: rgba(33, 33, 33, 0.4);
+         h2 {
+             color: $white;
+         }
+       label {
+      color: $back;
+      font-family: 'Lato', sans-serif;
+    }
+     }
+     .mybtn {
+         border: none;
+     }
+     .myselect {
+    border-radius: 5px;
+    width: 100%;
+    padding: 2% 2%;
+    margin-bottom: 14%;
+    margin-top: 7%;
+    font-family: 'Lato', sans-serif;
+
+    option {
+        color: $gray;
+        font-family: 'Lato', sans-serif;
+    }
+    option:active{
+        background-color: $orange!important;
+    }
+     }
+
+     .media-body h2 {
+         font-size: 22px;
+     }
